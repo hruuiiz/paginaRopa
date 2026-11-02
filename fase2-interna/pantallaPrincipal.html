@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../img/iconoTiendaSostenible.png" />
+    <title>Página Principal</title>
+    <style>
+
+      body{
+        background-color: beige;
+      }
+
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .containerHeader{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 15px;
+        width: 100%;
+      }
+
+      .containerHeader > a img {
+        height: auto;
+        width: 175px;
+        display: block;
+      }
+
+      #menuPrincipal ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 20px;
+        margin: 0%;
+        padding: 0%;
+      }
+
+      #menuPrincipal a{
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 1.3rem;
+        padding: 12px 18px;
+        border-radius: 8px;
+      }
+
+      #menuPrincipal a:hover{
+        background-color: seagreen;
+        color: white;
+      }
+
+      .iconos{
+        gap: 25px;
+        display: flex;
+        align-items: center;
+      }
+
+      .iconos img{
+        width: 80px;
+        height: auto;
+        border-radius: 50%;
+        display: block;
+      }
+
+      header {
+        position: sticky;
+        top: 0;                  
+        background-color: mediumseagreen;
+        z-index: 1000;           
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+      }
+
+      h3{
+        color: black;
+        font-family: sans-serif;
+        font-size: 2rem;
+        margin: 40px;
+      }
+
+      .gridDestacados{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px 70px;
+      }
+
+      .enlaceCard{
+        text-decoration: none;
+        color: black;
+        font-family: sans-serif;
+      }
+
+      .imagenCard img{
+        width: 100%;
+        display: block;
+      }
+
+      .card{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        background-color: white;
+      }
+
+      .card:hover{
+        background-color: lightslategray;
+        color: white;
+      }
+
+      .infoCard{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+        font-weight: bold;
+        font-family: sans-serif;
+      }
+
+      .infoCard p{
+        margin: 10px;
+      }
+
+      footer {
+        bottom: 0;                  
+        background-color: mediumseagreen;
+        margin-top: 50px;
+      }
+
+      .containerFooter{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        padding: 40px 60px;
+        font-family: sans-serif;
+        font-weight: bold;
+      }
+
+      .suscripcion form{
+        display: flex;
+        gap: 10px;
+        margin-top: 15px;
+      }
+
+      .suscripcion input{
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        width: 250px;
+        outline: none;
+      }
+
+      .btn { /*REUTILIZABLE*/
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #1f5f3b; 
+        color: white;
+        font-weight: bold;
+        cursor: pointer; 
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #144026; /* Se oscurece aún más cuando le pasas el ratón */
+      }
+
+      .redesSociales{
+        gap: 25px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .imgRedesSociales {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .redesSociales img{
+        width: 55px;
+        height: auto;
+        border-radius: 50%;
+        display: block;
+        gap: 20px;
+      }
+
+      .imgRedesSociales{
+        display: flex;
+        flex-direction: row;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+            <div class="containerHeader">
+                <a href="pantallaPrincipal.html">
+                  <img src="../img/iconoTiendaSostenible.png" alt="Logo tienda Tesoros con Historia">
+                </a>
+                <nav id="menuPrincipal">
+                    <ul>
+                        <li><a href="pantallaPrincipal.html">INICIO</a></li>
+                        <li><a href="pantallaComprar.html">COMPRAR</a></li>
+                        <li><a href="pantallaIntercambio.html">INTERCAMBIO</a></li>
+                        <li><a href="pantallaDonacion.html">DONACIÓN</a></li>
+                        <li><a href="pantallaMensajes.html">MENSAJES</a></li>
+                    </ul>
+                </nav>
+                <div class="iconos">
+                    <a href="pantallaIniciarSesion.html"><img src="../img/iconoUsuarios.png" alt="Iniciar sesión/Registrarse"></a>
+                    <a href=""><img src="../img/iconoBusqueda.png" alt="Buscar"></a>
+                    <a href="pantallaCarrito.html"><img src="../img/iconoCarrito.png" alt="Carrito"></a>
+                </div>
+            </div>
+        </header>
+      <main class="containerPagPrincipal">
+        <section class="cta" style="background-image: url(../img/fotoPrincipal.jpg); background-size: cover; background-position: center; padding: 200px 20px;">
+          <h2 style="color: white; text-align: center; font-weight: bold; font-size: 3rem; text-shadow: 2px 2px 10px black; margin-bottom: 10px; font-family: sans-serif;">TESOROS CON HISTORIA.</h2>
+          <p style="color: white; text-align: center; font-weight: bold; font-size: 1.5rem; text-shadow: 2px 2px 10px black; font-family: sans-serif;">ÚNICO Y SOSTENIBLE</p>
+        </section>
+        <section class="seccionDestacados">
+          <h3 style="text-align: center; font-style: italic;" >DESTACADOS:</h3>
+          <div class="gridDestacados">
+            <a href="pantallaProducto.html" class="enlaceCard">
+              <article class="card">
+                <div class="imagenCard">
+                  <img src="../img/camisetaEstampada.jpg" alt="Camiseta estampada"/>
+                </div>
+                <div class="infoCard">
+                  <h4>Camiseta estampada</h4>
+                  <p>12€</p>
+                </div>
+              </article>
+            </a>
+            <a href="pantallaProducto.html" class="enlaceCard">
+              <article class="card">
+                <div class="imagenCard">
+                  <img src="../img/camisetaEstampada.jpg" alt="Camiseta estampada"/>
+                </div>
+                <div class="infoCard">
+                  <h4>Camiseta estampada</h4>
+                  <p>12€</p>
+                </div>
+              </article>
+            </a>
+            <a href="pantallaProducto.html" class="enlaceCard">
+              <article class="card">
+                <div class="imagenCard">
+                  <img src="../img/camisetaEstampada.jpg" alt="Camiseta estampada"/>
+                </div>
+                <div class="infoCard">
+                  <h4>Camiseta estampada</h4>
+                  <p>12€</p>
+                </div>
+              </article>
+            </a>
+            <a href="pantallaProducto.html" class="enlaceCard">
+              <article class="card">
+                <div class="imagenCard">
+                  <img src="../img/camisetaEstampada.jpg" alt="Camiseta estampada"/>
+                </div>
+                <div class="infoCard">
+                  <h4>Camiseta estampada</h4>
+                  <p>12€</p>
+                </div>
+              </article>
+            </a>
+            <a href="pantallaProducto.html" class="enlaceCard">
+              <article class="card">
+                <div class="imagenCard">
+                  <img src="../img/camisetaEstampada.jpg" alt="Camiseta estampada"/>
+                </div>
+                <div class="infoCard">
+                  <h4>Camiseta estampada</h4>
+                  <p>12€</p>
+                </div>
+              </article>
+            </a>
+            <a href="pantallaProducto.html" class="enlaceCard">
+              <article class="card">
+                <div class="imagenCard">
+                  <img src="../img/camisetaEstampada.jpg" alt="Camiseta estampada"/>
+                </div>
+                <div class="infoCard">
+                  <h4>Camiseta estampada</h4>
+                  <p>12€</p>
+                </div>
+              </article>
+            </a>
+            <a href="pantallaProducto.html" class="enlaceCard">
+              <article class="card">
+                <div class="imagenCard">
+                  <img src="../img/camisetaEstampada.jpg" alt="Camiseta estampada"/>
+                </div>
+                <div class="infoCard">
+                  <h4>Camiseta estampada</h4>
+                  <p>12€</p>
+                </div>
+              </article>
+            </a>
+            <a href="pantallaProducto.html" class="enlaceCard">
+              <article class="card">
+                <div class="imagenCard">
+                  <img src="../img/camisetaEstampada.jpg" alt="Camiseta estampada"/>
+                </div>
+                <div class="infoCard">
+                  <h4>Camiseta estampada</h4>
+                  <p>12€</p>
+                </div>
+              </article>
+            </a>
+          </div>
+        </section>
+      </main>
+      <footer>
+      <div class="containerFooter">
+        <div class="suscripcion">
+          <p>¡SUSCRIBETE!</p>
+          <form action="">
+            <label><input type="email" name="email" id="email" placeholder="Tu correo electrónico..."/></label>
+            <button type="button" class="btn" id="botonSuscribirse">
+              Suscribirse
+            </button>
+          </form>
+        </div>
+        <div class="redesSociales">
+          <p>REDES SOCIALES</p>
+          <div class="imgRedesSociales">
+            <a href=""><img src="../img/iconoInstagram.png" alt="Instagram" /></a>
+            <a href=""><img src="../img/iconoTiktok.png" alt="Tik tok" /></a>
+            <a href=""><img src="../img/iconoTwitter.png" alt="Twitter" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </div>
+  </body>
+</html>

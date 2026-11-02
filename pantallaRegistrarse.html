@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="alternate stylesheet" href="css/alto-contraste.css" title="Alto Contraste">
+  </head>
+  <body>
+    <div class="containerCuenta">
+      <header><img src="img/iconoUsuarios.png" alt="Usuario" />
+      <button id="btnContraste" class="btn-contraste" title="Cambiar contraste">ALTO CONTRASTE</button>
+      </header>
+      <main>
+        <h2>REGISTRARSE</h2>
+        <form action="">
+          <div>
+            <label for="correoRegistro">Correo electrónico:</label>
+            <input type="email" name="correoRegistro" id="correoRegistro" />
+          </div>
+          <div>
+            <label for="nombreUsuario">Nombre de usuario:</label>
+            <input type="text" name="nombreUsuario" id="nombreUsuario" />
+          </div>
+          <div>
+            <label for="contrasenaRegistro">Contraseña:</label>
+            <input
+              type="password"
+              name="contrasenaRegistro"
+              id="contrasenaRegistro"
+            />
+          </div>
+          <div>
+            <label for="repetirContrasena">Repetir contraseña:</label>
+            <input
+              type="password"
+              name="repetirContrasena"
+              id="repetirContrasena"
+            />
+          </div>
+          <button type="submit" class="btn" id="botonRegistrarse">
+            Confirmar datos
+          </button>
+        </form>
+      </main>
+    </div>
+    <script>
+    const boton = document.getElementById('btnContraste');
+    const hojaAlternativa = document.querySelector('link[title="Alto Contraste"]');
+
+    if (boton && hojaAlternativa) {
+      hojaAlternativa.disabled = true;
+
+      boton.addEventListener('click', () => {
+        hojaAlternativa.disabled = !hojaAlternativa.disabled;
+      });
+    }
+  </script>
+  </body>
+</html>
