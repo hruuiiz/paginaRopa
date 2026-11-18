@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="img/svg/favicon.svg">
+  <title>Producto</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/pagina-detalle.css">
+  <link rel="alternate stylesheet" href="css/alto-contraste.css" title="Alto Contraste">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="containerHeader">
+        <a href="pantallaPrincipal.html">
+          <img src="img/svg/logo.svg" alt="Tesoros con Historia" width="240" height="68"
+            alt="Logo tienda Tesoros Con Historia">
+        </a>
+        <nav id="menuPrincipal">
+          <ul>
+            <li><a href="pantallaPrincipal.html">INICIO</a></li>
+            <li><a href="pantallaComprar.html">COMPRAR</a></li>
+            <li><a href="pantallaIntercambio.html">INTERCAMBIO</a></li>
+            <li><a href="pantallaDonacion.html">DONACIÓN</a></li>
+            <li><a href="pantallaMensajes.html">MENSAJES</a></li>
+          </ul>
+        </nav>
+        <div class="iconos">
+          <a href="pantallaIniciarSesion.html"><img src="img/svg/iconoUsuario.svg" alt="Iniciar sesión/Registrarse"></a>
+          <a href=""><img src="img/svg/iconoBuscar.svg" alt="Buscar"></a>
+          <a href="pantallaCarrito.html"><img src="img/svg/iconoCarrito.svg" alt="Carrito"></a>
+          <button id="btnContraste" class="btn-contraste" title="Cambiar contraste">ALTO CONTRASTE</button>
+        </div>
+      </div>
+    </header>
+    <main class="containerProducto">
+      <div class="seccionPantallas">
+        <h3>PRODUCTO</h3>
+        <nav class="breadcrumb">
+          <a href="pantallaPrincipal.html">Inicio</a> >
+          <a href="pantallaComprar.html">Comprar</a> >
+          <span>Producto</span>
+        </nav>
+        <div class="tarjetaProducto">
+  <figure class="imagenProducto">
+    <div class="galeria">
+      <img src="img/gabardinaProducto.jpg" alt="Gabardina beige cruzada, vista frontal">
+      <img src="img/gabardinaProductoDePerfil.jpg" alt="Gabardina beige, vista de perfil">
+      <img src="img/gabardinaProductoDeEspaldas.jpg" alt="Gabardina beige, vista de espaldas">
+    </div>
+    <figcaption>Gabardina beige · desliza para ver más fotos</figcaption>
+  </figure>
+  <div class="datosProducto">
+    <p>Gabardina larga beige.</p>
+    <p>Gabardina cruzada de lana, perfecta para el otoño y el invierno</p>
+    <p>50€</p>
+    <div class="selectorTallas">
+      <p>Tallas: </p>
+      <label><input type="radio" id="talla-xs" name="talla">XS</label>
+
+      <label><input type="radio" id="talla-s" name="talla">S</label>
+
+      <label><input type="radio" id="talla-m" name="talla">M</label>
+
+      <label><input type="radio" id="talla-l" name="talla">L</label>
+
+      <label><input type="radio" id="talla-xl" name="talla">XL</label>
+    </div>
+    <div class="botonesProducto">
+      <button type="button" class="btn">Añadir al carrito</button>
+      <button type="button" class="btn">Comprar</button>
+    </div>
+  </div>
+</div>
+        <div class="multimediaProducto">
+          <div class="audioProducto">
+            <p>Ambientación sonora de la tienda:</p>
+            <audio controls preload="metadata">
+              <source src="multimedia/audio/musica-ambiente.mp3" type="audio/mpeg">
+              <source src="multimedia/audio/musica-ambiente.ogg" type="audio/ogg">
+              Tu navegador no soporta la reproducción de audio HTML5. Puedes <a
+                href="multimedia/audio/musica-ambiente.mp3">descargar el archivo de audio aquí</a>.
+            </audio>
+          </div>
+          <div class="videoProducto">
+            <p>Descubre más sobre la tienda:</p>
+            <video controls poster="multimedia/video/poster-tienda.png" preload="metadata" width="640">
+              <source src="multimedia/video/videoParaTienda.mp4" type="video/mp4">
+              <source src="multimedia/video/videoParaTienda.webm" type="video/webm">
+              Tu navegador no soporta la reproducción de vídeo HTML5. Puedes <a
+                href="multimedia/video/videoParaTienda.mp4">descargar el vídeo aquí</a>.
+            </video>
+          </div>
+        </div>
+    </main>
+    <footer>
+      <div class="containerFooter">
+        <div class="suscripcion">
+          <p>¡SUSCRIBETE!</p>
+          <form action="">
+            <label><input type="email" name="email" id="email" placeholder="Tu correo electrónico..." /></label>
+            <button type="button" class="btn" id="botonSuscribirse">
+              Suscribirse
+            </button>
+          </form>
+        </div>
+        <div class="redesSociales">
+          <p>REDES SOCIALES</p>
+          <div class="imgRedesSociales">
+            <a href=""><img src="img/svg/iconoInstagram.svg" alt="Instagram" /></a>
+            <a href=""><img src="img/svg/iconoTiktok.svg" alt="Tik tok" /></a>
+            <a href=""><img src="img/svg/iconoTwitterX.svg" alt="Twitter" /></a>
+          </div>
+        </div>
+      </div>
+      <p class="creditos">Fotos de Unsplash (Max Harlynking, Çağın Kargı, Husien Bisky, Hamed Darzi, Ryan Hoffman, TuanAnh Blue, Taras Shypka) 
+            · Audio y vídeo: Pixabay · Iconos: Bootstrap Icons (MIT) 
+            · Algunas imágenes generadas con IA</p>
+    </footer>
+  </div>
+  <script>
+    const boton = document.getElementById('btnContraste');
+    const hojaAlternativa = document.querySelector('link[title="Alto Contraste"]');
+
+    if (boton && hojaAlternativa) {
+      hojaAlternativa.disabled = true;
+
+      boton.addEventListener('click', () => {
+        hojaAlternativa.disabled = !hojaAlternativa.disabled;
+      });
+    }
+  </script>
+</body>
+
+</html>

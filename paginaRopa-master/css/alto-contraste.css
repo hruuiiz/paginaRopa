@@ -1,0 +1,49 @@
+body {
+    background-color: #333333;
+}
+
+.containerCuenta, .carritoCard, .card, header, footer, .containerHeader, .containerFooter {
+    background-color: darkslategrey;
+    color: white;
+}
+
+h1, h2, h3, h4, label, p {
+    color: white;
+}
+
+a, .infoCarritoCard, .containerCuenta form div:nth-child(3) a {
+  color: yellow;
+}
+
+button, .btn, #botonTramitarPedido, #botonSuscribirse, .containerCuenta button {
+  background-color: yellow;
+  color: black;
+}
+
+input, .containerCuenta input, #email {
+  background-color: black;
+  color: white;
+}
+
+.btn:hover {
+  background-color: black;
+  color: yellow;
+}
+
+#menuPrincipal a:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.card:hover {
+  background-color: black;
+  color: white;
+}
+
+.breadcrumb a:hover {
+  color: yellow;
+}
+
+#menuPrincipal a{
+  color: white;
+}

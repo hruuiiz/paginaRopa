@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="img/svg/favicon.svg" />
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link
+      rel="alternate stylesheet"
+      href="css/alto-contraste.css"
+      title="Alto Contraste"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="containerHeader">
+          <a href="pantallaPrincipal.html">
+            <img
+              src="img/svg/logo.svg"
+              alt="Tesoros con Historia"
+              width="240"
+              height="68"
+              alt="Logo tienda Tesoros Con Historia"
+            />
+          </a>
+          <nav id="menuPrincipal">
+            <ul>
+              <li><a href="pantallaPrincipal.html">INICIO</a></li>
+              <li><a href="pantallaComprar.html">COMPRAR</a></li>
+              <li><a href="pantallaIntercambio.html">INTERCAMBIO</a></li>
+              <li><a href="pantallaDonacion.html">DONACIÓN</a></li>
+              <li><a href="pantallaMensajes.html">MENSAJES</a></li>
+            </ul>
+          </nav>
+          <div class="iconos">
+            <a href="pantallaIniciarSesion.html"
+              ><img
+                src="img/svg/iconoUsuario.svg"
+                alt="Iniciar sesión/Registrarse"
+            /></a>
+            <a href=""><img src="img/svg/iconoBuscar.svg" alt="Buscar" /></a>
+            <a href="pantallaCarrito.html"
+              ><img src="img/svg/iconoCarrito.svg" alt="Carrito"
+            /></a>
+            <button
+              id="btnContraste"
+              class="btn-contraste"
+              title="Cambiar contraste"
+            >
+              ALTO CONTRASTE
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="containerPagPrincipal">
+        <section class="portada">
+  <picture>
+    <source media="(max-width: 350px)" srcset="img/fotoPrincipalTiendaParaMovil.jpg">
+    <img src="img/fotoPrincipalTienda.jpg" alt="Sala con ropa de segunda mano" width="1920" height="1152">
+  </picture>
+  <div class="textoPortada">
+    <h2>TESOROS CON HISTORIA.</h2>
+    <p>ÚNICO Y SOSTENIBLE</p>
+  </div>
+</section>
+        <section class="animacionInicio">
+          <h3>CADA PRENDA TIENE SU HISTORIA</h3>
+          <picture>
+            <source
+              srcset="multimedia/animacion/animacion-pagina.webp"
+              type="image/webp"
+            />
+            <img
+              src="multimedia/animacion/animacion-pagina.gif"
+              alt="Animación con seis prendas de ropa colgadas en una percha de madera que van cambiando una a una"
+              width="1024"
+              height="1024"
+            />
+          </picture>
+        </section>
+        <section class="seccionPantallas">
+          <section class="presentacionSitio">
+            <h3>CONOCE TESOROS CON HISTORIA</h3>
+            <video
+              controls
+              poster="multimedia/video/portada-video-presentacion.png"
+              preload="metadata"
+              width="540"
+              height="540"
+            >
+              <source
+                src="multimedia/video/video-presentacion.mp4"
+                type="video/mp4"
+              />
+              <source
+                src="multimedia/video/video-presentacion.webm"
+                type="video/webm"
+              />
+              Tu navegador no soporta la reproducción de vídeo HTML5. Puedes
+              <a href="multimedia/video/video-presentacion.mp4"
+                >descargar el vídeo en MP4</a
+              >
+              o <a href="multimedia/video/video-presentacion.webm">en WebM</a>.
+            </video>
+          </section>
+          <h3>DESTACADOS:</h3>
+          <div class="gridTarjetas">
+            <a href="pantallaProducto.html" class="enlaceCard">
+              <article class="card">
+                <div class="imagenCard">
+                  <img
+                    src="img/camisetaEstampado.webp"
+                    alt="Camiseta estampada" 
+                  />
+                </div>
+                <div class="infoCard">
+                  <h4>Camiseta estampada</h4>
+                  <p>12€</p>
+                </div>
+              </article>
+            </a>
+            <a href="pantallaProducto.html" class="enlaceCard">
+              <article class="card">
+                <div class="imagenCard">
+                  <img
+                    src="img/camisetaEstampado.webp"
+                    alt="Camiseta estampada"
+                  />
+                </div>
+                <div class="infoCard">
+                  <h4>Camiseta estampada</h4>
+                  <p>12€</p>
+                </div>
+              </article>
+            </a>
+            <a href="pantallaProducto.html" class="enlaceCard">
+              <article class="card">
+                <div class="imagenCard">
+                  <img
+                    src="img/camisetaEstampado.webp"
+                    alt="Camiseta estampada"
+                  />
+                </div>
+                <div class="infoCard">
+                  <h4>Camiseta estampada</h4>
+                  <p>12€</p>
+                </div>
+              </article>
+            </a>
+            <a href="pantallaProducto.html" class="enlaceCard">
+              <article class="card">
+                <div class="imagenCard">
+                  <img
+                    src="img/camisetaEstampado.webp"
+                    alt="Camiseta estampada"
+                  />
+                </div>
+                <div class="infoCard">
+                  <h4>Camiseta estampada</h4>
+                  <p>12€</p>
+                </div>
+              </article>
+            </a>
+            <a href="pantallaProducto.html" class="enlaceCard">
+              <article class="card">
+                <div class="imagenCard">
+                  <img
+                    src="img/camisetaEstampado.webp"
+                    alt="Camiseta estampada"
+                  />
+                </div>
+                <div class="infoCard">
+                  <h4>Camiseta estampada</h4>
+                  <p>12€</p>
+                </div>
+              </article>
+            </a>
+            <a href="pantallaProducto.html" class="enlaceCard">
+              <article class="card">
+                <div class="imagenCard">
+                  <img
+                    src="img/camisetaEstampado.webp"
+                    alt="Camiseta estampada"
+                  />
+                </div>
+                <div class="infoCard">
+                  <h4>Camiseta estampada</h4>
+                  <p>12€</p>
+                </div>
+              </article>
+            </a>
+            <a href="pantallaProducto.html" class="enlaceCard">
+              <article class="card">
+                <div class="imagenCard">
+                  <img
+                    src="img/camisetaEstampado.webp"
+                    alt="Camiseta estampada"
+                  />
+                </div>
+                <div class="infoCard">
+                  <h4>Camiseta estampada</h4>
+                  <p>12€</p>
+                </div>
+              </article>
+            </a>
+            <a href="pantallaProducto.html" class="enlaceCard">
+              <article class="card">
+                <div class="imagenCard">
+                  <img
+                    src="img/camisetaEstampado.webp"
+                    alt="Camiseta estampada"
+                  />
+                </div>
+                <div class="infoCard">
+                  <h4>Camiseta estampada</h4>
+                  <p>12€</p>
+                </div>
+              </article>
+            </a>
+            <a href="pantallaProducto.html" class="enlaceCard">
+              <article class="card">
+                <div class="imagenCard">
+                  <img
+                    src="img/camisetaEstampado.webp"
+                    alt="Camiseta estampada"
+                  />
+                </div>
+                <div class="infoCard">
+                  <h4>Camiseta estampada</h4>
+                  <p>12€</p>
+                </div>
+              </article>
+            </a>
+          </div>
+        </section>
+      </main>
+      <section class="cta">
+  <h2>¿Tienes ropa que ya no usas?</h2>
+  <p>Dale una segunda vida: dónala o intercámbiala</p>
+  <a href="pantallaDonacion.html" class="btn">Donar ropa</a>
+</section>
+      <footer>
+        <div class="containerFooter">
+          <div class="suscripcion">
+            <p>¡SUSCRIBETE!</p>
+            <form action="">
+              <label
+                ><input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Tu correo electrónico..."
+              /></label>
+              <button type="button" class="btn" id="botonSuscribirse">
+                Suscribirse
+              </button>
+            </form>
+          </div>
+          <div class="redesSociales">
+            <p>REDES SOCIALES</p>
+            <div class="imgRedesSociales">
+              <a href=""
+                ><img src="img/svg/iconoInstagram.svg" alt="Instagram"
+              /></a>
+              <a href=""><img src="img/svg/iconoTiktok.svg" alt="Tik tok" /></a>
+              <a href=""
+                ><img src="img/svg/iconoTwitterX.svg" alt="Twitter"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <p class="creditos">Fotos de Unsplash (Max Harlynking, Çağın Kargı, Husien Bisky, Hamed Darzi, Ryan Hoffman, TuanAnh Blue, Taras Shypka) 
+            · Audio y vídeo: Pixabay · Iconos: Bootstrap Icons (MIT) 
+            · Algunas imágenes generadas con IA</p>
+      </footer>
+    </div>
+    <script>
+      const boton = document.getElementById("btnContraste");
+      const hojaAlternativa = document.querySelector(
+        'link[title="Alto Contraste"]',
+      );
+
+      if (boton && hojaAlternativa) {
+        hojaAlternativa.disabled = true;
+
+        boton.addEventListener("click", () => {
+          hojaAlternativa.disabled = !hojaAlternativa.disabled;
+        });
+      }
+    </script>
+  </body>
+</html>

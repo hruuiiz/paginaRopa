@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="img/svg/favicon.svg">
+  <title>Iniciar Sesión</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="alternate stylesheet" href="css/alto-contraste.css" title="Alto Contraste">
+</head>
+
+<body>
+  <div class="containerCuenta">
+    <header><img src="img/svg/iconoUsuario.svg" alt="Usuario" />
+      <button id="btnContraste" class="btn-contraste" title="Cambiar contraste">ALTO CONTRASTE</button>
+    </header>
+    <main>
+      <h2>INICIAR SESIÓN</h2>
+      <form action="">
+        <div>
+          <label for="correoIniciarSesion">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M8 0a4 4 0 0 1 4 4v2.05a2.5 2.5 0 0 1 2 2.45v5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5v-5a2.5 2.5 0 0 1 2-2.45V4a4 4 0 0 1 4-4M4.5 7A1.5 1.5 0 0 0 3 8.5v5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5v-5A1.5 1.5 0 0 0 11.5 7zM8 1a3 3 0 0 0-3 3v2h6V4a3 3 0 0 0-3-3" />
+            </svg>
+            Correo electrónico:
+          </label>
+          <input type="email" name="correoIniciarSesion" id="correoIniciarSesion" />
+        </div>
+        <div>
+          <label for="contrasenaIniciarSesion">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M8 0a4 4 0 0 1 4 4v2.05a2.5 2.5 0 0 1 2 2.45v5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5v-5a2.5 2.5 0 0 1 2-2.45V4a4 4 0 0 1 4-4M4.5 7A1.5 1.5 0 0 0 3 8.5v5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5v-5A1.5 1.5 0 0 0 11.5 7zM8 1a3 3 0 0 0-3 3v2h6V4a3 3 0 0 0-3-3" />
+            </svg>
+            Contraseña:
+          </label>
+          <input type="password" name="contrasenaIniciarSesion" id="contrasenaIniciarSesion" />
+        </div>
+        <div>
+          <span>¿No tienes cuenta?</span>
+          <a href="pantallaRegistrarse.html">Registrarse</a>
+        </div>
+        <button type="submit" class="btn" id="botonIniciarSesion">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle"
+            viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+            <path
+              d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+          </svg>
+          Iniciar sesión
+        </button>
+      </form>
+    </main>
+  </div>
+  <script>
+    const boton = document.getElementById('btnContraste');
+    const hojaAlternativa = document.querySelector('link[title="Alto Contraste"]');
+
+    if (boton && hojaAlternativa) {
+      hojaAlternativa.disabled = true;
+
+      boton.addEventListener('click', () => {
+        hojaAlternativa.disabled = !hojaAlternativa.disabled;
+      });
+    }
+  </script>
+</body>
+
+</html>

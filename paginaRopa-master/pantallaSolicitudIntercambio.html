@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="img/svg/favicon.svg">
+    <title>Solicitud Intercambio</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="alternate stylesheet" href="css/alto-contraste.css" title="Alto Contraste">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="containerHeader">
+                <a href="pantallaPrincipal.html">
+                    <img src="img/svg/logo.svg" alt="Tesoros con Historia" width="240" height="68"
+                        alt="Logo tienda Tesoros Con Historia">
+                </a>
+                <nav id="menuPrincipal">
+                    <ul>
+                        <li><a href="pantallaPrincipal.html">INICIO</a></li>
+                        <li><a href="pantallaComprar.html">COMPRAR</a></li>
+                        <li><a href="pantallaIntercambio.html">INTERCAMBIO</a></li>
+                        <li><a href="pantallaDonacion.html">DONACIÓN</a></li>
+                        <li><a href="pantallaMensajes.html">MENSAJES</a></li>
+                    </ul>
+                </nav>
+                <div class="iconos">
+                    <a href="pantallaIniciarSesion.html"><img src="img/svg/iconoUsuario.svg"
+                            alt="Iniciar sesión/Registrarse"></a>
+                    <a href=""><img src="img/svg/iconoBuscar.svg" alt="Buscar"></a>
+                    <a href="pantallaCarrito.html"><img src="img/svg/iconoCarrito.svg" alt="Carrito"></a>
+                    <button id="btnContraste" class="btn-contraste" title="Cambiar contraste">ALTO CONTRASTE</button>
+                </div>
+            </div>
+        </header>
+        <main class="containerSolicIntercambio">
+            <section class="seccionPantallas">
+                <h3>INTERCAMBIO</h3>
+                <nav class="breadcrumb">
+                    <a href="pantallaPrincipal.html">Inicio</a> >
+                    <a href="pantallaIntercambio.html">Intercambio</a> >
+                    <span>Solicitud</span>
+                </nav>
+                <div class="tarjetaSolicIntercambio">
+                    <div class="imagenSolicIntercambio">
+                        <img src="img/sudaderaSolicitudIntercambio.jpg"
+                            alt="Sudadera negra de manga larga colgada en una percha">
+                    </div>
+                    <div class="datosIntercambio">
+                        <h2>Solicitud de intercambio</h2>
+                        <div class="contenidoSolicIntercambio">
+                            <section class="botonesIntercambio">
+                                <button class="btn">Contactar</button>
+                                <button class="btn">Aceptar Intercambio</button>
+                            </section>
+                            <section class="infoIntercambio">
+                                <p>Sudadera negra de manga larga, de algodón, con un pequeño estampado en el pecho.
+                                    Usada pero en muy buen estado.</p>
+                                <p>Talla M</p>
+                                <p>18€</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="containerFooter">
+                <div class="suscripcion">
+                    <p>¡SUSCRIBETE!</p>
+                    <form action="">
+                        <label><input type="email" name="email" id="email"
+                                placeholder="Tu correo electrónico..." /></label>
+                        <button type="button" class="btn" id="botonSuscribirse">
+                            Suscribirse
+                        </button>
+                    </form>
+                </div>
+                <div class="redesSociales">
+                    <p>REDES SOCIALES</p>
+                    <div class="imgRedesSociales">
+                        <a href=""><img src="img/svg/iconoInstagram.svg" alt="Instagram" /></a>
+                        <a href=""><img src="img/svg/iconoTiktok.svg" alt="Tik tok" /></a>
+                        <a href=""><img src="img/svg/iconoTwitterX.svg" alt="Twitter" /></a>
+                    </div>
+                </div>
+            </div>
+            <p class="creditos">Fotos de Unsplash (Max Harlynking, Çağın Kargı, Husien Bisky, Hamed Darzi, Ryan Hoffman, TuanAnh Blue, Taras Shypka) 
+            · Audio y vídeo: Pixabay · Iconos: Bootstrap Icons (MIT) 
+            · Algunas imágenes generadas con IA</p>
+        </footer>
+    </div>
+    <script>
+        const boton = document.getElementById('btnContraste');
+        const hojaAlternativa = document.querySelector('link[title="Alto Contraste"]');
+
+        if (boton && hojaAlternativa) {
+            hojaAlternativa.disabled = true;
+
+            boton.addEventListener('click', () => {
+                hojaAlternativa.disabled = !hojaAlternativa.disabled;
+            });
+        }
+    </script>
+</body>
+
+</html>
